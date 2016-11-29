@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+
+<style type="text/css">
+	
+	body{
+		background-image: url("images/test-10.gif");
+	}
+	
+	.container{
+		background-image: url("images/test-1.jpg");
+		height: 575px;
+		width: 800px;
+		margin: auto;
+	}
+	
+	marquee {
+		font-family: cursive;
+		font-size: 30px;
+		color: #718540;
+	}
+	
+	.down{
+		margin-left: 290px;
+		margin-top: 40px;
+	}
+	
+	table{
+		text-align: left;
+	}
+	
+	.td1{
+		
+		font-style: oblique;
+		color: #718540;
+		font-size: 18px;
+		width: 60px;	
+	
+	}	
+
+	
+	input{
+		border: 1px solid #718540;
+		border-radius: 5px; 
+	}
+	
+	input:FOCUS{
+		border-color: red;
+	}
+	textarea{
+		height: 100px;
+		width: 100px;
+		overflow: hidden;
+		resize:none;
+	}
+	textarea:FOCUS{
+		border-color: black;
+	}
+	.sub,.res{
+		border: 1px solid #718540;
+		background-color: #718540;
+		font-size: 15px;
+		font-weight: 600;
+		color: #D4E155;
+		height: 30px;
+		width: 50px;
+	}
+	
+	.td3{
+			
+		font-size: 13px;
+		padding-left: 40px;
+		font-style: italic;
+		color: #990000;	
+	}
+	
+	.ad1{
+		float: left;
+		border: 1px solid red;
+		height: 500px;
+		width: 200px;
+		background-image: url("images/test-t.png");
+		
+	}
+	
+	.ad2{
+		float: right;
+		border: 1px solid red;
+		height: 500px;
+		width: 200px;
+		background-image: url("images/test-t2.png");
+		
+	}
+	
+	
+	
+</style>
+
+</head>
+<body>
+	<div class="ad1"></div>
+	<div class="ad2"></div>
+	<div class="container">
+		<div class="up">
+			<marquee>欢迎注册</marquee>
+		</div>
+		
+		<div class="down">
+			
+			<form action="">
+				<table>
+					<tr>
+						<td class="td1">昵称 :</td>
+						<td>
+							<input type="text" name="username" />
+						</td>
+						<td class="td3">例如:小霸王</td>
+					</tr>
+					
+					<tr>
+						<td class="td1">密码 :</td>
+						<td>
+							<input type="password" name="password" />
+						</td>
+						<td class="td3">5-8个字符之间</td>
+					</tr>
+					
+					<tr>
+						<td class="td1">性别 :</td>
+						<td>
+							<input type="radio" name="gender">男
+							<input type="radio" name="gender">女
+						</td>
+						<td class="td3">请如实选择</td>
+					</tr>
+					
+					<tr>
+						<td class="td1">年龄 :</td>
+						<td>
+							<input type="text" name="age" />
+						</td>
+						<td class="td3">未满18算禁止注册</td>
+					</tr>
+					
+					<tr>
+						<td class="td1">爱好 :</td>
+						<td>
+							<input type="checkbox" name="like" />足球
+							<input type="checkbox" name="like" />篮球
+							<input type="checkbox" name="like" />排球
+						</td>
+						<td class="td3">可以不选</td>
+					</tr>
+					
+					<tr>
+						<td class="td1">城市 :</td>
+						<td>
+							<select name="city">
+								<option value="0">上海</option>
+								<option value="1">南京</option>
+								<option value="2">杭州</option>
+							</select>
+						</td>
+						<td class="td3">当前居住</td>
+					</tr>
+					
+					<tr>
+						<td class="td1">格言 :</td>
+						<td>
+							<textarea>
+							
+							</textarea>
+						</td>
+						<td class="td3">人生的灯塔</td>
+					</tr>
+					
+					<tr>
+						<td class="td1">确认 :</td>
+						<td>
+							<input class="sub" type="submit" value="注册"/>
+							<input class="res" type="reset" value="重置"/>
+						</td>
+						<td class="td3"></td>
+					</tr>
+					
+				</table>
+			</form>
+		
+		</div>
+	</div>
+	
+</body>
+</html>
